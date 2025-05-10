@@ -1,0 +1,99 @@
+{
+  "name": "vscode-typing-sound",
+  "displayName": "VSCode Typing Sound",
+  "description": "Add satisfying mechanical keyboard typing sounds to your coding experience",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "publisher": "your-publisher-id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vscode-typing-sound"
+  },
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
+  "keywords": [
+    "typing",
+    "sound",
+    "keyboard",
+    "mechanical",
+    "audio"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Typing Sound",
+      "properties": {
+        "typingSound.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable typing sounds"
+        },
+        "typingSound.volume": {
+          "type": "number",
+          "default": 50,
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Sound volume (0-100)"
+        },
+        "typingSound.keyCooldown": {
+          "type": "number",
+          "default": 50,
+          "minimum": 0,
+          "maximum": 500,
+          "description": "Minimum time between sounds for the same key (milliseconds)"
+        },
+        "typingSound.specialKeys": {
+          "type": "object",
+          "default": {
+            "Enter": true,
+            "Tab": true,
+            "Space": true,
+            "Backspace": true
+          },
+          "description": "Enable special sounds for specific keys"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "typingSound.toggle",
+        "title": "Toggle Typing Sound"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vscode/test-electron": "^2.1.5",
+    "eslint": "^8.20.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "play-sound": "^1.1.5"
+  }
+}
