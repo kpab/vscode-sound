@@ -6,10 +6,10 @@
   "engines": {
     "vscode": "^1.60.0"
   },
-  "publisher": "117cd522-1212-6fcf-9355-e99a98d6e237",
+  "publisher": "kpab",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/vscode-typing-sound"
+    "url": "https://github.com/kpab/vscode-typing-sound"
   },
   "icon": "media/icon.png",
   "galleryBanner": {
