@@ -6,7 +6,7 @@
   "engines": {
     "vscode": "^1.60.0"
   },
-  "publisher": "your-publisher-id",
+  "publisher": "117cd522-1212-6fcf-9355-e99a98d6e237",
   "repository": {
     "type": "git",
     "url": "https://github.com/yourusername/vscode-typing-sound"

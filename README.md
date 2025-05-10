@@ -1,6 +1,6 @@
 # VSCode Typing Sound
 
-タイピング時に気持ちの良いメカニカルキーボードの効果音を鳴らすVSCode拡張機能です。
+タイピング時に気持ちの良いメカニカルキーボードの効果音を鳴らす VSCode 拡張機能です。
 
 ## 機能
 
@@ -13,34 +13,34 @@
 
 この拡張機能は以下の設定をサポートしています：
 
-* `typingSound.enabled`: 効果音を有効/無効にする
-* `typingSound.volume`: 音量（0-100）
-* `typingSound.keyCooldown`: 同一キーの再生間隔（ミリ秒）
-* `typingSound.specialKeys`: 特殊キーの有効/無効設定
+- `typingSound.enabled`: 効果音を有効/無効にする
+- `typingSound.volume`: 音量（0-100）
+- `typingSound.keyCooldown`: 同一キーの再生間隔（ミリ秒）
+- `typingSound.specialKeys`: 特殊キーの有効/無効設定
 
 ## コマンド
 
-* `typingSound.toggle`: タイピング効果音のオン/オフを切り替え
+- `typingSound.toggle`: タイピング効果音のオン/オフを切り替え
 
 ## 対応プラットフォーム
 
 - Windows
 - macOS
-- Linux (要Sound Playerのインストール)
+- Linux (要 Sound Player のインストール)
 
 ## 必要な音源ファイル
 
-mediaフォルダの中のsoundsフォルダに以下のMP3ファイルを配置します：
+media フォルダの中の sounds フォルダに以下の MP3 ファイルを配置します：
 
 - `key-press.mp3` - 通常のキー入力音
-- `enter.mp3` - Enterキー用効果音
-- `tab.mp3` - Tabキー用効果音
+- `enter.mp3` - Enter キー用効果音
+- `tab.mp3` - Tab キー用効果音
 - `space.mp3` - スペースキー用効果音
-- `backspace.mp3` - Backspaceキー用効果音
+- `backspace.mp3` - Backspace キー用効果音
 
 ## インストール
 
-VSCodeの拡張機能マーケットプレイスから「VSCode Typing Sound」を検索してインストールできます。
+VSCode の拡張機能マーケットプレイスから「VSCode Typing Sound」を検索してインストールできます。
 
 ## 開発
 
@@ -57,7 +57,7 @@ npm install
 
 ### デバッグ実行
 
-VSCodeでF5キーを押すとデバッグ実行できます。
+VSCode で F5 キーを押すとデバッグ実行できます。
 
 ### パッケージ化
 
@@ -71,4 +71,4 @@ MIT
 
 ## 作者
 
-Your Name
+kpab
